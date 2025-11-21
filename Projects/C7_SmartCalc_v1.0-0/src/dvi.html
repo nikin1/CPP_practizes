@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Пример веб-страницы</title>
+  <style type="text/css">
+      TABLE {
+        border-collapse: collapse;
+      }
+      TD {
+        padding: 3px; /* Поля вокруг содержимого таблицы */
+        border: 1px solid black; /* Параметры рамки */
+        color:orange;
+        font-weight: bold;
+      }
+      TH {
+        padding: 3px; /* Поля вокруг содержимого таблицы */
+        border: 1px solid black; /* Параметры рамки */
+        background-color: rgb(3, 3, 78);
+        color: aliceblue;
+      }
+  </style>
+ </head>
+ <body>
+  <h1>Документация по SmartCalc v1.0</h1>
+
+  <p>Графический интерфейс приложения. При вводе переменной x в новом окне появится график данной функции</p>
+  <img src="images/ui.png" alt="ui" height="500px" width="500px">
+  <img src="images/graph_ui.png" alt="ui" height="500px" width="500px">
+  
+  <p>При построении графика появляются дополнительные поля</p>
+  <ul>
+      <li>Облать Определения задается диапозоном от x_min до x_max</li>
+      <li>Шаг, с которым будет вводиться перменная x</li>
+      <li>Подставление значения переменной x</li>
+  </ul>
+
+  <h3>Арифметические операторы:</h3>
+  <table>
+      <tr>
+          <th>Название оператора</th>
+          <th>Пример</th>
+      </tr>
+      <tr>
+        <th>Скобки</th>
+        <td>(a + b)</td>
+      </tr>
+      <tr>
+        <th>Сложение</th>
+        <td>a + b</td>
+      </tr>
+      <tr>
+        <th>Вычитание</th>
+        <td>a - b</td>
+      </tr>
+      <tr>
+        <th>Возведение в степень</th>
+        <td>a ^ b</td>
+      </tr>
+      <tr>
+        <th>Остаток от деления</th>
+        <td>a mod b</td>
+      </tr>
+      <tr>
+        <th>Унарный плюс</th>
+        <td>+a</td>
+      </tr>
+      <tr>
+        <th>Унарный минус</th>
+        <td>-a</td>
+      </tr>
+  </table>
+
+  <h3>Функции:</h3>
+  <table>
+      <tr>
+          <th>Описание функции</th>
+          <th>Функция</th>
+      </tr>
+      <tr>
+          <th>Вычисляет косинус</th>
+          <td>cos(x)</td>
+      </tr>
+      <tr>
+          <th>Вычисляет синус</th>
+          <td>sin(x)</td>
+      </tr>
+      <tr>
+          <th>Вычисляет косинус</th>
+          <td>tan(x)</td>
+      </tr>
+      <tr>
+          <th>Вычисляет арккосинус</th>
+          <td>acos(x)</td>
+      </tr>
+      <tr>
+          <th>Вычисляет арксинус</th>
+          <td>asin(x)</td>
+      </tr>
+      <tr>
+          <th>Вычисляет арктангенс</th>
+          <td>atan(x)</td>
+      </tr>
+      <tr>
+          <th>Вычисляет квадратный корень</th>
+          <td>sqrt(x)</td>
+      </tr>
+      <tr>
+          <th>Вычисляет натуральный логарифм</th>
+          <td>ln(x)</td>
+      </tr>
+      <tr>
+          <th>Вычисляет десятичный логарифм</th>
+          <td>log(x)</td>
+      </tr>
+  </table>
+
+ </body>
+</html>
