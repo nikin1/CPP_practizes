@@ -9,11 +9,15 @@ public:
     Vector3D(double x, double y, double z) : X(x), Y(y), Z(z) {}
 
     Vector3D operator-(const Vector3D& B) const { return {X - B.X, Y - B.Y, Z - B.Z}; }
+
     Vector3D operator+(const Vector3D& B) const { return {X + B.X, Y + B.Y, Z + B.Z}; }
+
     Vector3D operator*(double scalar) const { return {X * scalar, Y * scalar, Z * scalar}; }
+
     Vector3D cross(const Vector3D& B) const {
         return {Y * B.Z - Z * B.Y, Z * B.X - X * B.Z, X * B.Y - Y * B.X};
     }
+
     double length() const {
         return std::sqrt(X * X + Y * Y + Z * Z);
     }
@@ -24,6 +28,7 @@ public:
     Vector3D start, end;
     Segment3D() = default;
     Segment3D(Vector3D s, Vector3D e) : start(s), end(e) {}
+
     Vector3D direction() const { return end - start; }
 };
 
